@@ -1,4 +1,4 @@
-# ZED FTP Extension
+# ZED FTP Extension (ALPHA)
 
 A File Transfer Protocol (FTP) extension for the ZED editor, enabling direct integration with FTP servers for seamless remote file operations.
 
