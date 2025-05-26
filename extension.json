@@ -1,0 +1,60 @@
+{
+  "id": "zed_ftp",
+  "name": "FTP",
+  "version": "0.1.0",
+  "description": "FTP integration for ZED Editor",
+  "authors": ["Tomasz Ballaun <tomasz.ballaun@icloud.com>"],
+  "repository": "https://github.com/username/zed_ftp",
+  "activation": "always",
+  "main": "./target/debug/libzed_ftp.dylib",
+  "commands": [
+    {
+      "name": "ftp.connect",
+      "title": "FTP: Connect to Server",
+      "description": "Connect to an FTP server",
+      "palette": true,
+      "keybindings": []
+    },
+    {
+      "name": "ftp.disconnect",
+      "title": "FTP: Disconnect",
+      "description": "Disconnect from current FTP server",
+      "palette": true,
+      "keybindings": []
+    },
+    {
+      "name": "ftp.list",
+      "title": "FTP: List Directory",
+      "description": "List files in current FTP directory",
+      "palette": true,
+      "keybindings": []
+    }
+  ],
+  "config": {
+    "host": {
+      "type": "string",
+      "default": "ftp.example.com",
+      "description": "FTP server hostname"
+    },
+    "port": {
+      "type": "number",
+      "default": 21,
+      "description": "FTP server port"
+    },
+    "username": {
+      "type": "string",
+      "default": "anonymous",
+      "description": "FTP username"
+    },
+    "password": {
+      "type": "string",
+      "default": "anonymous@",
+      "description": "FTP password"
+    },
+    "initialDirectory": {
+      "type": "string",
+      "default": "",
+      "description": "Initial directory to navigate to after connection"
+    }
+  }
+}
